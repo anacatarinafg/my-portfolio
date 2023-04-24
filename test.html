@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .text-container {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: red;
+      }
+
+      .moving-text {
+        display: inline-block;
+        font-size: 24px;
+        white-space: nowrap;
+        animation: move-text 5s linear infinite;
+      }
+
+      @keyframes move-text {
+        0% {
+          transform: translateX(-100vh);
+        }
+        100% {
+          transform: translateX(100vh);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-container">
+        <p class="moving-text">Texto em movimento</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ana Gonçalves | Portfolio</title>
+    <link rel="stylesheet" href="global.css" />
+
+    <script
+      src="https://kit.fontawesome.com/1b2346db77.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="dat.gui.min.js"></script>
+    <script>
+      window.ga =
+        window.ga ||
+        function () {
+          (ga.q = ga.q || []).push(arguments);
+        };
+      ga.l = +new Date();
+      ga("create", "UA-105392568-1", "auto");
+      ga("send", "pageview");
+    </script>
+
+    <style>
+      html,
+      body {
+        overflow: hidden;
+      }
+
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        z-index: 9;
+      }
+
+      canvas {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 0;
+      }
+
+      .dg {
+        display: none;
+      }
+
+      .promo-header {
+        display: none;
+      }
+
+      .promo-body {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas></canvas>
+
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logotype">
+          <a href="#" class="navbar__homepage"> Ana </a>
+        </div>
+        <div class="navbar__links">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="work.html" class="navbar__link"> Work </a>
+            </li>
+            <li class="navbar__item">
+              <a href="about.html" class="navbar__link"> About </a>
+            </li>
+            <li class="navbar__item">
+              <a href="/contact.html" class="navbar__link"> Contact </a>
+            </li>
+            <li class="navbar__item"><i class="fa-solid fa-circle"></i></li>
+            <li class="navbar__item navbar__icon">
+              <i class="fa-solid fa-grip-lines"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mother of God, pls forgive me -->
+    <!-- <div class="promo">
+      <div class="promo-middle">
+        <div class="promo-content">
+          <div class="promo-header">
+            <span class="promo-close">&times;</span>
+          </div>
+          <div class="promo-body">
+            <div class="links-container">
+              <a class="link" id="apple_link" target="_blank">
+                <img
+                  class="link-img"
+                  alt="Download on the App Store"
+                  src="app_badge.png"
+                />
+              </a>
+              <a class="link" id="google_link" target="_blank">
+                <img
+                  class="link-img"
+                  alt="Get it on Google Play"
+                  src="gp_badge.png"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div>
+      <main class="index__main">
+        <section class="main__titles">
+          <div class="main__headline main__headline--1">Front-end</div>
+          <div class="main__headline main__headline--2">Developer</div>
+        </section>
+        <section class="main__information">
+          <div class="main__paragraphs">
+            <div class="main__paragraph main__paragraph--1">
+              <p>My name is Ana Catarina. I’m based in Portugal &</p>
+            </div>
+            <div class="main__paragraph main__paragraph--2">
+              <p>
+                i’m a junior front-end developer that creates digital
+                experiences.
+              </p>
+            </div>
+          </div>
+          <div class="main__underline">
+            <p>____________________________________________________________</p>
+          </div>
+          <div class="main__contact">
+            <a href="/contact.html" class="main__link">
+              Get in touch
+              <i class="fa-regular fa-circle-right main__icon"></i>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <!-- <span class="footer__credits">
+        anafrontenddeveloper@gmail.com
+      </span> -->
+      </div>
+      <div class="footer__media">
+        <a href="#" class="footer__link">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" class="footer__link">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

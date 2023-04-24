@@ -1,0 +1,419 @@
+/* FOR MOBILE */
+
+.main__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.left__side {
+  width: 100%;
+  height: 100%;
+  background: #AB1E1E;
+  color: #fff;
+}
+.banner {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner__text {
+  font-family: "Baskervville";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.right__side {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.linktree {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.linktree__list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 2em;
+}
+.linktree__item {
+  font-size: 28px;
+}
+.linktree__link {
+  transition: 250ms;
+}
+.linktree__link:hover {
+  transform: scale(1.5);
+}
+
+.form__box {
+  font-family: var(--basic-ff);
+  padding: 3em 6em;
+  box-sizing: border-box;
+  transition: 250ms;
+}
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  height: 100%;
+}
+.form__input,
+.form__input--1 {
+  border: solid 1.5px #9e9e9e;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #f5f5f5;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__label {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  color: #e8e8e8;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__label--1 {
+  position: absolute;
+  left: 15px;
+  top: 80px;
+  color: #e8e8e8;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__input:focus,
+.form__input:valid {
+  outline: none;
+  border: 1.5px solid #fff;
+}
+.form__input--1:focus,
+.form__input--1:valid {
+  outline: none;
+  border: 1.5px solid #fff;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:valid ~ .form__label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #141414;
+  padding: 0 0.2em;
+  color: #fff;
+}
+.form__input--1:focus ~ .form__label--1,
+.form__input--1:valid ~ .form__label--1 {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #141414;
+  padding: 0 0.2em;
+  color: #fff;
+}
+.form__textarea {
+  font-family: var(--basic-ff);
+  border: solid 1.5px #9e9e9e;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #f5f5f5;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
+}
+.form__textarea::placeholder {
+  color: #e8e8e8;
+  font-family: var(--basic-ff);
+}
+
+.form__button {
+  font-size: 18px;
+  background: #24a0ed;
+  color: #f5f5f5;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.form__button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form__button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form__button span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+}
+
+.form__button svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+.form__button .svg__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  transition: all 0.3s;
+}
+
+.form__button:hover .svg__wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form__button:hover svg {
+  transform: rotate(45deg);
+}
+
+@media only screen and (min-width: 968px) {
+  .main__contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 88%;
+  }
+  .left__side {
+    width: 100%;
+    height: 100%;
+    background: var(--first-gradient);
+    color: #fff;
+    position: relative;
+  }
+  .banner {
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 3.5em;
+  }
+  .banner__text {
+    font-family: "Baskervville";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 152px;
+    text-transform: uppercase;
+  }
+  .banner__text--1 {
+    align-self: start;
+  }
+  .banner__text--2 {
+    align-self: flex-start;
+    margin-left: 100px;
+  }
+  .banner__text--3 {
+    align-self: start;
+  }
+  .right__side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .linktree {
+    border-bottom: none;
+  }
+  .linktree__list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 2em;
+  }
+  .linktree__item {
+    font-size: 28px;
+  }
+  .linktree__link {
+    transition: 250ms;
+  }
+  .linktree__link:hover {
+    transform: scale(1.5);
+  }
+
+  .form__box {
+    font-family: var(--basic-ff);
+    padding: 3.5em;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 250ms;
+  }
+  .form__box:hover {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transform: scale(1.05);
+  }
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 500px;
+  }
+  .form__input,
+  .form__input--1 {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .form__label {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .form__label--1 {
+    position: absolute;
+    left: 15px;
+    top: 80px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .form__input:focus,
+  .form__input:valid {
+    outline: none;
+    border: 1.5px solid #fff;
+  }
+  .form__input--1:focus,
+  .form__input--1:valid {
+    outline: none;
+    border: 1.5px solid #fff;
+  }
+
+  .form__input:focus ~ .form__label,
+  .form__input:valid ~ .form__label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #141414;
+    padding: 0 0.2em;
+    color: #fff;
+  }
+  .form__input--1:focus ~ .form__label--1,
+  .form__input--1:valid ~ .form__label--1 {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #141414;
+    padding: 0 0.2em;
+    color: #fff;
+  }
+  .form__textarea {
+    font-family: var(--basic-ff);
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    resize: none;
+  }
+  .form__textarea::placeholder {
+    color: #e8e8e8;
+    font-family: var(--basic-ff);
+  }
+
+  .form__button {
+    font-size: 18px;
+    background: #24a0ed;
+    color: #f5f5f5;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    justify-content: center;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+
+  .form__button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .form__button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .form__button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+
+  .form__button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+
+  .form__button .svg__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    transition: all 0.3s;
+  }
+
+  .form__button:hover .svg__wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .form__button:hover svg {
+    transform: rotate(45deg);
+  }
+}

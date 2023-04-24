@@ -1,0 +1,439 @@
+.main__about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__headline {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+}
+.about__circle--1 {
+    display: block;
+    position: absolute;
+    left: 0%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+  }
+  .about__circle--2 {
+    position: absolute;
+    right: 0%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+  }
+  .about__circle--3 {
+    display: none;
+  }
+  .about__circle--4 {
+    display: none;
+  }
+
+.about__title {
+  font-family: "Baskervville";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about__information {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  gap: 5em;
+  grid-template-columns: 1fr;
+  padding: 1.5em;
+}
+
+.about__profile {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--basic-ff);
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 1.5em 0;
+}
+
+.about__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about__name {
+  font-size: 16px;
+}
+
+.about__description {
+  text-align: justify;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.profile__data {
+  font-family: var(--basic-ff);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.profile__status {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+  padding: 1.5em 0;
+}
+
+.profile__status:first-child {
+  border-top: 1px solid rgba(250, 250, 250, 0.1);
+}
+
+.about__skills {
+  flex-direction: column;
+  font-family: var(--basic-ff);
+}
+
+.about__education {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education__headline {
+  width: 100%;
+  text-align: end;
+  text-transform: uppercase;
+  font-size: 18px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.education__school {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-top: 1px solid rgba(250, 250, 250, 0.1);
+  padding: 1em 0;
+}
+
+.education__info {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.education__name {
+  font-weight: 700;
+}
+
+.education__year {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.education_degree {
+}
+
+.education__description {
+  text-align: justify;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.about__hobbies {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hobbies__headline {
+  width: 100%;
+  text-align: end;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-bottom: 2px solid rgba(250, 250, 250, 0.1);
+}
+
+.hobbies__description {
+  text-align: justify;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.hobbies__box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.hobbies__text {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.programming__skills {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em;
+}
+
+.programming__headline {
+  width: 100%;
+  font-family: var(--basic-ff);
+  text-align: end;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(250, 250, 250, 0.1);
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main__about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__headline {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+    position: relative;
+  }
+  .about__circle--1 {
+    display: none;
+  }
+  .about__circle--2 {
+    position: absolute;
+    right: 36.5%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+  }
+  .about__circle--3 {
+    display: block;
+    position: absolute;
+    right: 51.7%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+  }
+  .about__circle--4 {
+    display: block;
+    position: absolute;
+    right: 44.5%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+  }
+
+  .about__title {
+    font-family: "Baskervville";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .about__information {
+    width: 1400px;
+    margin: auto;
+    display: grid;
+    gap: 10em;
+    grid-template-columns: 1fr 3fr;
+    padding: 3.5em;
+  }
+
+  .about__profile {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--basic-ff);
+  }
+
+  .profile__info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 1.5em 0;
+  }
+
+  .about__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .about__name {
+    font-size: 16px;
+  }
+
+  .about__description {
+    text-align: justify;
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+
+  .profile__data {
+    font-family: var(--basic-ff);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .profile__status {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0.5em;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+    padding: 1.5em 0;
+  }
+
+  .profile__status:first-child {
+    border-top: 1px solid rgba(250, 250, 250, 0.1);
+  }
+
+  .about__skills {
+    flex-direction: column;
+    font-family: var(--basic-ff);
+  }
+
+  .about__education {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .education__headline {
+    width: 100%;
+    text-align: end;
+    text-transform: uppercase;
+    font-size: 22px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  .education__school {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 1px solid rgba(250, 250, 250, 0.1);
+    padding: 1em 0;
+  }
+
+  .education__info {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  .education__name {
+    font-weight: 700;
+  }
+
+  .education__year {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .education_degree {
+  }
+
+  .education__description {
+    text-align: justify;
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+
+  .about__hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hobbies__headline {
+    width: 100%;
+    text-align: end;
+    text-transform: uppercase;
+    font-size: 22px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  .hobbies__description {
+    text-align: justify;
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+
+  .hobbies__box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 35px;
+  }
+
+  .hobbies__text {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .programming__skills {
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3.5em;
+  }
+
+  .programming__headline {
+    width: 100%;
+    font-family: var(--basic-ff);
+    text-align: end;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-size: 22px;
+  }
+  .programming__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+  }
+  .programming__languages {
+    display: flex;
+    gap: 20;
+    padding: 1em 0;
+  }
+  .programming__language {
+    width: 150px;
+  }
+}
