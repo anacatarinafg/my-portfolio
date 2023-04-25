@@ -15,34 +15,43 @@
 <body>
   <header>
     <nav class="navbar">
-      <div class="navbar__logotype">
-        <a href="/index.html" class="navbar__homepage">
-          Ana
-        </a>
-      </div>
-      <div class="navbar__links">
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <a href="/work.html" class="navbar__link">
-              Work
+        <div class="navbar__logotype">
+            <a href="/index.html" class="navbar__homepage">
+                Ana
             </a>
-          </li>
-          <li class="navbar__item">
-            <a href="/about.html" class="navbar__link navbar__link--active">
-              About
-            </a>
-          </li>
-          <li class="navbar__item">
-            <a href="/contact.html" class="navbar__link ">
-              Contact
-            </a>
-          </li>
-          <li class="navbar__item"><i class="fa-solid fa-circle"></i></li>
-          <li class="navbar__item navbar__icon"><i class="fa-solid fa-grip-lines"></i></li>
-        </ul>
-      </div>
+        </div>
+
+        <!-- ADICIONAR TOGGLE BUTTON TO MOBILE -->
+        <a href="#" class="toggle__button">
+          <i class="fa-solid fa-burger"></i>
+      </a>
+        <!-- ADICIONAR TOGGLE BUTTON TO MOBILE -->
+
+        <div class="navbar__links">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="/work.html" class="navbar__link">
+                        Work
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/about.html" class="navbar__link navbar__link--show">
+                        About
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/contact.html" class="navbar__link">
+                        Contact
+                    </a>
+                </li>
+                <div class="navbar__wrapper">
+                    <li class="navbar__item"><i class="fa-solid fa-circle"></i></span>
+                    <li class="navbar__item"><i class="fa-solid fa-grip-lines"></i></li>
+                </div>
+            </ul>
+        </div>
     </nav>
-  </header>
+</header>
 
   <!-- MAIN -->
   <main class="main__about">
@@ -125,17 +134,17 @@
       </div>
     </section>
     <section class="programming__skills">
-      <h3 class="programming__headline">Programming skills</h3>
+      <h3 class="programming__headline">Professional skills</h3>
       <div class="programming__languages">
-        <img  src="assets/languages/5847f5bdcef1014c0b5e489c.png" class="programming__language"></img>
-        <img  src="assets/languages/css3-logo-png-transparent.png" class="programming__language"></img>
-        <img  src="assets/languages/313-3133777_javascript-transparent-background-svg-hd-png-download.png" class="programming__language"></img>
-        <img  src="assets/languages/5847f5bdcef1014c0b5e489c.png" class="programming__language"></img>
-        <img  src="assets/languages/5847f5bdcef1014c0b5e489c.png" class="programming__language"></img>
-        <img  src="assets/languages/5847f5bdcef1014c0b5e489c.png" class="programming__language"></img>
-        <img  src="assets/languages/5847f5bdcef1014c0b5e489c.png" class="programming__language"></img>
-        <img  src="assets/languages/5847f5bdcef1014c0b5e489c.png" class="programming__language"></img>
-        <img  src="assets/languages/5847f5bdcef1014c0b5e489c.png" class="programming__language"></img>
+        <span>Html</span>
+        <span>Css</span>
+        <span>Sass</span>
+        <span>Bootstrap</span>
+        <span>Tailwind</span>
+        <span>Javascript</span>
+        <span>Angular</span>
+        <span>React</span>
+        <span>Typescript</span>
       </div>
     </section>
   </main>
@@ -143,22 +152,18 @@
 
 
   <footer>
-    <div class="footer">
-      <!-- <span class="footer__credits">
-        COPYRIGHT © 2023 ||| ALL RIGHT RESERVED.
-      </span> -->
-    </div>
     <div class="footer__media">
-      <a href="#" class="footer__link">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a href="#" class="footer__link">
-        <i class="fa-brands fa-github"></i>
-      </a>
+        <a href="#" class="footer__link">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" class="footer__link">
+            <i class="fa-brands fa-github"></i>
+        </a>
     </div>
-  </footer>
+</footer>
 
   <script src="./script.js"></script>
+  <script src="/js/navbar.js"></script>
 </body>
 
 </html>

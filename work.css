@@ -35,7 +35,7 @@
   display: none;
 }
 .work__circle--4 {
-    display: none;
+  display: none;
 }
 .work__title {
   font-family: "Baskervville";
@@ -86,6 +86,71 @@
   list-style-type: circle;
   text-align: justify;
 }
+.work__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.work__link {
+  padding: 0.5em 1em;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+.work__link:hover {
+  color: #fff;
+}
+
+
+.work__link {
+  transition: 250ms linear;
+  position: relative;
+  overflow: hidden;
+}
+
+.work__link:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.work__link:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.work__link:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.work__link:hover:before {
+  border-color: #333;
+  height: 100%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.3s;
+}
+
+.work__link:hover:after {
+  border-color: #7e7e7e;
+  height: 100%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.5s;
+}
 
 @media only screen and (min-width: 768px) {
   .main__work {
@@ -106,11 +171,10 @@
   }
   .work__circle--1 {
     display: none;
-
   }
   .work__circle--2 {
     position: absolute;
-    right: 36.5%;
+    right: 35%;
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -119,7 +183,7 @@
   .work__circle--3 {
     display: block;
     position: absolute;
-    right: 51.7%;
+    right: 53.5%;
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -140,7 +204,6 @@
     font-weight: 400;
     font-size: 52px;
     text-transform: uppercase;
-    text-align: center;
   }
   .work {
     display: flex;
@@ -179,5 +242,70 @@
   .work__item {
     list-style-type: circle;
     text-align: justify;
+  }
+  .work__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .work__link {
+    padding: 0.5em 1em;
+    border: 1px solid #333;
+    border-radius: 5px;
+  }
+  .work__link:hover {
+    color: #fff;
+  }
+
+  
+  .work__link {
+    transition: 250ms linear;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .work__link:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+
+  .work__link:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+
+  .work__link:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .work__link:hover:before {
+    border-color: #333;
+    height: 100%;
+    transform: translateX(0);
+    transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  }
+
+  .work__link:hover:after {
+    border-color: #7e7e7e;
+    height: 100%;
+    transform: translateX(0);
+    transition: 0.3s transform linear, 0.3s height linear 0.5s;
   }
 }

@@ -57,7 +57,7 @@ PROJECTS.forEach((project) => {
   const workSection = document.createElement("section");
   workSection.classList.add("work");
   workSection.innerHTML = `
-    <a class="work__box" href="${project.link}" target="_blank">
+    <div class="work__box">
     <img src="${project.img}" alt="weather-app-designed-on-figma" class="work__image">
     <div class="work__info">
         <h2 class="work__name">${project.name}</h2>
@@ -68,8 +68,12 @@ PROJECTS.forEach((project) => {
             <li class="work__item">${project.list[1]}</li>
             <li class="work__item">${project.list[2]}</li>
         </ul>
+        <div class="work__links">
+        <a href="${project.link}" class="work__link" target="_blank">Source code</a>
+        <a href="#" class="work__link" target="_blank">Web page</a>
+    </div> 
     </div>
-</a>
+</div>
             `;
   mainWork.appendChild(workSection);
 });

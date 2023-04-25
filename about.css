@@ -1,5 +1,6 @@
 .main__about {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -13,28 +14,28 @@
   border-bottom: 1px solid rgba(250, 250, 250, 0.1);
 }
 .about__circle--1 {
-    display: block;
-    position: absolute;
-    left: 0%;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 1px solid rgba(250, 250, 250, 0.1);
-  }
-  .about__circle--2 {
-    position: absolute;
-    right: 0%;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 1px solid rgba(250, 250, 250, 0.1);
-  }
-  .about__circle--3 {
-    display: none;
-  }
-  .about__circle--4 {
-    display: none;
-  }
+  display: block;
+  position: absolute;
+  left: 0%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+}
+.about__circle--2 {
+  position: absolute;
+  right: 0%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+}
+.about__circle--3 {
+  display: none;
+}
+.about__circle--4 {
+  display: none;
+}
 
 .about__title {
   font-family: "Baskervville";
@@ -119,7 +120,7 @@
   text-align: end;
   text-transform: uppercase;
   font-size: 18px;
-    border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .education__school {
@@ -165,7 +166,7 @@
   text-align: end;
   text-transform: uppercase;
   font-size: 18px;
-  border-bottom: 2px solid rgba(250, 250, 250, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .hobbies__description {
@@ -194,16 +195,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5em;
+  flex-direction: column;
+  padding: 0 1.5em;
 }
 
 .programming__headline {
   width: 100%;
-  font-family: var(--basic-ff);
+  font-family: "Archivo", sans-serif;
   text-align: end;
   text-transform: uppercase;
-  border-bottom: 2px solid rgba(250, 250, 250, 0.1);
   font-size: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.programming__languages {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2.5em 0;
+  gap: 15px;
+}
+.programming__languages span {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  padding: 1rem;
+}
+
+.programming__languages span:before {
+  visibility: hidden;
+}
+
+.programming__languages span:hover:before {
+    visibility: hidden;
 }
 
 @media only screen and (min-width: 768px) {
@@ -227,7 +256,7 @@
   }
   .about__circle--2 {
     position: absolute;
-    right: 36.5%;
+    right: 35%;
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -236,7 +265,7 @@
   .about__circle--3 {
     display: block;
     position: absolute;
-    right: 51.7%;
+    right: 53.5%;
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -336,7 +365,7 @@
     text-align: end;
     text-transform: uppercase;
     font-size: 22px;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   }
 
   .education__school {
@@ -382,7 +411,7 @@
     text-align: end;
     text-transform: uppercase;
     font-size: 22px;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   }
 
   .hobbies__description {
@@ -411,7 +440,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 3.5em;
+    padding: 0 3.5em;
   }
 
   .programming__headline {
@@ -419,21 +448,44 @@
     font-family: var(--basic-ff);
     text-align: end;
     text-transform: uppercase;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
     font-size: 22px;
   }
-  .programming__box {
+  .programming__languages {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 0;
+    flex-wrap: wrap;
+    padding: 2.5em 0;
   }
-  .programming__languages {
+
+  .programming__languages span {
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    align-items: center;    
+    color: #fff;
     display: flex;
-    gap: 20;
-    padding: 1em 0;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    padding: 1rem;
+    cursor: pointer; 
   }
-  .programming__language {
-    width: 150px;
+
+  .programming__languages span:before {
+    visibility: visible;
+    content: "";
+    display: inline-block;
+    background-color: #fff;
+    height: 1px;
+    margin-right: 10px;
+    transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
+    width: 0;
+  }
+
+  .programming__languages span:hover:before {
+    visibility: visible;
+    width: 3em;
   }
 }

@@ -20,10 +20,17 @@
                     Ana
                 </a>
             </div>
+    
+            <!-- ADICIONAR TOGGLE BUTTON TO MOBILE -->
+            <a href="#" class="toggle__button">
+                <i class="fa-solid fa-burger"></i>
+            </a>
+            <!-- ADICIONAR TOGGLE BUTTON TO MOBILE -->
+    
             <div class="navbar__links">
-                <ul class="navbar__list">
+                <ul class="navbar__list ">
                     <li class="navbar__item">
-                        <a href="/work.html" class="navbar__link navbar__link--active">
+                        <a href="/work.html" class="navbar__link navbar__link--show">
                             Work
                         </a>
                     </li>
@@ -33,12 +40,14 @@
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a href="/contact.html" class="navbar__link ">
+                        <a href="/contact.html" class="navbar__link">
                             Contact
                         </a>
                     </li>
-                    <li class="navbar__item"><i class="fa-solid fa-circle"></i></li>
-                    <li class="navbar__item navbar__icon"><i class="fa-solid fa-grip-lines"></i></li>
+                    <div class="navbar__wrapper">
+                        <li class="navbar__item"><i class="fa-solid fa-circle"></i></span>
+                        <li class="navbar__item"><i class="fa-solid fa-grip-lines"></i></li>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -54,82 +63,23 @@
             <div class="work__circle--4"></div>
         </section>
         <!-- <section class="work">
-            <a class="work__box" href="">
+            <div class="work__box" href="">
                 <img src="/assets/weather-figma.png" alt="weather-app-designed-on-figma" class="work__image">
                 <div class="work__info">
                     <h2 class="work__name">Real-time Weather App</h2>
-                    <p class="work__description">You look at the sky and you’re worried that may be a rainy day? With
-                        this application, you’ll be able to check the current weather with detailed highlights such as
-                        wind, pressure, visibility & humidity PLUS you can also check the weather in the next hours of
-                        the day. Cooool, right?! What if I told you that you’ll ALSO be able to check the weather for
-                        the next five days? Now you’re free to put you’re clothes on the clotches-line without fear of
-                        them getting wet by the rain.
+                    <p class="work__description">tESTE NO HTML
                     </p>
                     <ul class="work__list">
                         <li class="work__item">Project designed on FIGMA</li>
                         <li class="work__item">Project coded with HTML, CSS & JAVASCRIPT</li>
                         <li class="work__item">API provived by https://openweathermap.org</li>
                     </ul>
+                    <div class="work__links">
+                        <a href="#" class="work__link">Source code</a>
+                        <a href="#" class="work__link">Web page</a>
+                    </div> 
                 </div>
-            </a>    
-        </section>
-        <section class="work">
-            <a class="work__box" href="">
-                <img src="/assets/localhost_3000_shop.png" alt="weather-app-designed-on-figma" class="work__image">
-                <div class="work__info">
-                    <h2 class="work__name">E-commerce "ecologic memories"</h2>
-                    <p class="work__description">You look at the sky and you’re worried that may be a rainy day? With
-                        this application, you’ll be able to check the current weather with detailed highlights such as
-                        wind, pressure, visibility & humidity PLUS you can also check the weather in the next hours of
-                        the day. Cooool, right?! What if I told you that you’ll ALSO be able to check the weather for
-                        the next five days? Now you’re free to put you’re clothes on the clotches-line without fear of
-                        them getting wet by the rain.
-                    </p>
-                    <ul class="work__list">
-                        <li class="work__item">Project designed on FIGMA</li>
-                        <li class="work__item">Project coded with NEXTJS & Sanity.io</li>
-                    </ul>
-                </div>
-            </a>    
-        </section>
-        <section class="work">
-            <a class="work__box" href="">
-                <img src="/assets/weather-figma.png" alt="weather-app-designed-on-figma" class="work__image">
-                <div class="work__info">
-                    <h2 class="work__name">Solar System</h2>
-                    <p class="work__description">You look at the sky and you’re worried that may be a rainy day? With
-                        this application, you’ll be able to check the current weather with detailed highlights such as
-                        wind, pressure, visibility & humidity PLUS you can also check the weather in the next hours of
-                        the day. Cooool, right?! What if I told you that you’ll ALSO be able to check the weather for
-                        the next five days? Now you’re free to put you’re clothes on the clotches-line without fear of
-                        them getting wet by the rain.
-                    </p>
-                    <ul class="work__list">
-                        <li class="work__item">Project designed on FIGMA</li>
-                        <li class="work__item">Project coded with HTML & CSS</li>
-                    </ul>
-                </div>
-            </a>    
-        </section>
-        <section class="work">
-            <a class="work__box" href="">
-                <img src="/assets/weather-figma.png" alt="weather-app-designed-on-figma" class="work__image">
-                <div class="work__info">
-                    <h2 class="work__name">ToDo List</h2>
-                    <p class="work__description">You look at the sky and you’re worried that may be a rainy day? With
-                        this application, you’ll be able to check the current weather with detailed highlights such as
-                        wind, pressure, visibility & humidity PLUS you can also check the weather in the next hours of
-                        the day. Cooool, right?! What if I told you that you’ll ALSO be able to check the weather for
-                        the next five days? Now you’re free to put you’re clothes on the clotches-line without fear of
-                        them getting wet by the rain.
-                    </p>
-                    <ul class="work__list">
-                        <li class="work__item">Project designed on FIGMA</li>
-                        <li class="work__item">Project coded with HTML, CSS & JAVASCRIPT</li>
-                        <li class="work__item">API provived by https://openweathermap.org</li>
-                    </ul>
-                </div>
-            </a>    
+            </div>
         </section> -->
     </main>
 
@@ -153,6 +103,7 @@
 
     <script src="./script.js"></script>
     <script src="./js/work.js"></script>
+    <script src="/js/navbar.js"></script>
 </body>
 
 </html>
