@@ -3,9 +3,10 @@ const PROJECTS = [
     id: 1,
     name: "Real-time weather",
     description:
-      "You look at the sky and you’re worried that may be a rainy day? With this application, you’ll be able to check the current weather with detailed highlights such as wind, pressure, visibility & humidity PLUS you can also check the weather in the next hours of the day. Cooool, right?! What if I told you that you’ll ALSO be able to check the weather for the next five days? Now you’re free to put you’re clothes on the clotches-line without fear of them getting wet by the rain.",
-    img: "/assets/weather-figma.png",
-    link: "https://github.com/anacatarinafg/weather-app",
+      "To create the real-time weather app, I used HTML to create the page structure, defining sections, headers, and other elements that make up the app. I also used CSS to style the web page, defining colors, fonts, layout, and other design elements. Additionally, used JavaScript to retrieve weather data from an API and display it on the web page in real-time. I also included a search bar for finding weather information for different locations.",
+    img: "/assets/weather-app.png",
+    sourceCode: "https://github.com/anacatarinafg/weather-app",
+    webpage: "",
     list: [
       "Project designed on FIGMA",
       "Project coded with HTML, CSS & JAVASCRIPT",
@@ -15,37 +16,78 @@ const PROJECTS = [
   {
     id: 2,
     name: 'E-commerce "ecologic memories',
-    description: "Project 2 description",
+    description:
+      "To create the e-commerce website, I used React components to build the user interface, defining components for the header, footer, product listings, shopping cart, and other elements that make up the site. Additionally, used Next.js to create server-side rendered pages, improving the performance and SEO of the website.",
     img: "/assets/ecologic-memories.png",
-    link: "",
+    sourceCode: "https://github.com/anacatarinafg/e-commerce_ecologic-memories",
+    webpage: "",
     list: [
       "Project designed on FIGMA",
-      "Project coded with HTML, CSS & JAVASCRIPT",
-      "API provived by https://openweathermap.org",
+      "Project coded with NEXTJS & CSS",
+      "Images of the products stored on Sanity",
     ],
   },
   {
     id: 3,
-    name: "Solar system",
-    description: "Project 3 description",
-    img: "/assets/planets.png",
-    link: "https://github.com/anacatarinafg/solar-system",
+    name: "Tesla clone",
+    description:
+      "To create the front page of Tesla website clone, I used HTML to create the page structure, defining sections, headers, footers, and other elements that make up the site. Additionally, used Tailwind to apply visual styles to the site, such as colors, fonts, spacing, and other design elements.",
+    img: "/assets/tesla-project.png",
+    sourceCode: "https://github.com/anacatarinafg/tesla-frontpage-clone",
+    webpage: "",
     list: [
-      "Project designed on FIGMA",
-      "Project coded with HTML, CSS & JAVASCRIPT",
-      "API provived by https://openweathermap.org",
+      "Tesla webpage: https://www.tesla.com/",
+      "Project coded with HTML & TAILWIND",
+      "NOTE: I only coded the front page.",
     ],
   },
   {
     id: 4,
-    name: "Calculator",
-    description: "Project 4 description",
-    img: "/assets/calculator.png",
-    link: "https://github.com/anacatarinafg/simple-calculator",
+    name: "NOS Alive clone",
+    description: "To create the music festival page, I used HTML to create the page structure, defining sections, headers, and other elements that make up the page. Also included images and descriptions for the music festival, as well as information about the performers and schedule. Additionally, used CSS to style the web page, defining colors, fonts, layout, and other design elements. Also used CSS animations and transitions to add interactivity to the page.",
+    img: "/assets/nos-alive.png",
+    sourceCode: "https://github.com/anacatarinafg/nos-alive-clone",
+    webpage: "",
+    list: [
+      "NOS Alive webpage: https://nosalive.com/",
+      "Project coded with HTML & CSS",
+      "NOTE: I only coded the front page.",
+    ],
+  },
+  {
+    id: 5,
+    name: "Solar system",
+    description:
+      "To create the solar system project, I used HTML to create the page structure, defining sections, headers, and other elements that make up the site. I also included images and details for each planet. Additionally, used CSS to style the web page, defining colors, fonts, layout, and other design elements. I also used CSS animations to add interactivity to the project, such as rotating planets and orbiting moons.",
+    img: "/assets/planets.png",
+    sourceCode: "https://github.com/anacatarinafg/solar-system",
+    webpage: "",
     list: [
       "Project designed on FIGMA",
       "Project coded with HTML, CSS & JAVASCRIPT",
-      "API provived by https://openweathermap.org",
+      "All images provided by SPACEPEDIA",
+    ],
+  },
+  {
+    id: 6,
+    name: "Todo",
+    description: "Implemented features such as adding and deleting tasks, marking tasks as completed, and filtering tasks by status. Also used local storage to store the user's task data, allowing the data to persist even after the user closes the app.",
+    img: "/assets/todo-app.png",
+    sourceCode: "https://github.com/anacatarinafg/Todo",
+    webpage: "",
+    list: ["Project designed on FIGMA", "Project coded with REACT & CSS", "Simple projects to practice my development skills."],
+  },
+  {
+    id: 7,
+    name: "Calculator",
+    description: "Used JavaScript to add functionality to the calculator, allowing users to perform basic mathematical operations such as addition, subtraction, multiplication, and division. Also included features such as a clear button for clearing the calculator's display, and a decimal button for entering decimal numbers.",
+    img: "/assets/calculator.png",
+    sourceCode: "https://github.com/anacatarinafg/simple-calculator",
+    webpage: "",
+    list: [
+      "Project designed on FIGMA",
+      "Project coded with HTML, CSS & JAVASCRIPT",
+      "Simple projects to practice my development skills.",
     ],
   },
 ];
@@ -69,8 +111,8 @@ PROJECTS.forEach((project) => {
             <li class="work__item">${project.list[2]}</li>
         </ul>
         <div class="work__links">
-        <a href="${project.link}" class="work__link" target="_blank">Source code</a>
-        <a href="#" class="work__link" target="_blank">Web page</a>
+        <a href="${project.sourceCode}" class="work__link" target="_blank">Source code</a>
+        <a href="${project.webpage}" class="work__link" target="_blank">Web page</a>
     </div> 
     </div>
 </div>
