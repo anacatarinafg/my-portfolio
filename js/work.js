@@ -15,7 +15,7 @@ const PROJECTS = [
   },
   {
     id: 2,
-    name: 'E-commerce "ecologic memories',
+    name: 'E-commerce "ecologic memories"',
     description:
       "To create the e-commerce website, I used React components to build the user interface, defining components for the header, footer, product listings, shopping cart, and other elements that make up the site. Additionally, used Next.js to create server-side rendered pages, improving the performance and SEO of the website.",
     img: "/assets/ecologic-memories.png",

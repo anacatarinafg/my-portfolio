@@ -129,158 +129,116 @@ span {
   #NAVBAR ----- MOBILE
 \*-----------------------------------*/
 
-.header {}
-
-.navbar {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 65px;
-  padding: 0 1.5em;
+  padding: 0 3.5em;
   border-bottom: 1px solid rgba(250, 250, 250, 0.1);
-  width: 100%;
+  font-family: var(--basic-ff);
+  color: #fff;
 }
-.navbar.active {
+
+
+.navbar__wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 0 1.5em;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.1);
-  width: 100%;
-  height: 100svh;
+  gap: 20px;
 }
 
-.navbar__logotype {}
 
-.navbar__homepage {
+.navbar__logotype {
   font-weight: 600;
   font-size: 16px;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-.navbar__links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .navbar__list {
   width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 25px;
 }
 
-.navbar__item {
+.navbar__list li a {
+  text-decoration: none;
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
 }
 
-.navbar__link {
+.navbar__button,
+.navbar__closeButton {
   display: none;
 }
-
-.navbar__wrapper {
-  display: none;
+.navbar__link--show {
+  border-bottom: 1px solid #fff;
 }
 
-.toggle__button {
-  width: 30px;
-  height: 21px;
-  position: absolute;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1em 2em;
+.navbar__link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s;
 }
-.navbar__links.active {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1em 1em;
-  flex-direction: column;
-}
-/*-----------------------------------*\
-  #NAVBAR ----- DESKTOP
-\*-----------------------------------*/
 
-@media only screen and (min-width: 768px) {
-  .header {}
+.navbar__link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar__button,
+  .navbar__closeButton {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .navbar__button {
+    color: #ffffff;
+  }
+
+  .navbar__closeButton {
+    color: #ececec;
+  }
 
   .navbar {
+    opacity: 0;
+    visibility: hidden;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 65px;
-    padding: 0 3.5em;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.1);
-    font-family: var(--basic-ff);
-    color: #fff;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #141414;
+    padding: 3rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    z-index: 20;
   }
 
-  .navbar__logotype {
-    z-index: 999;
-  }
-
-  .navbar__homepage {
-
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.10em;
-    text-transform: uppercase;
-  }
-
-  .navbar__links {
-    z-index: 999;
+  .navbar.visible {
+    opacity: 1;
+    visibility: visible;
   }
 
   .navbar__list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 25px;
+    flex-direction: column;
+    align-items: end;
   }
 
-  .navbar__item {
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-
-  .navbar__link {
-    display: inline-block;
-    text-decoration: none;
-  }
-
-  .navbar__link--show {
-    border-bottom: 1px solid #fff;
-  }
-
-  .navbar__link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: width .3s;
-  }
-
-  .navbar__link:hover::after {
-    width: 100%;
-    transition: width .3s;
-  }
-
-  .toggle__button {
-    display: none;
-  }
-  .navbar__wrapper {
-    display: flex;
-    gap: 20px;
+  .navbar__list li a {
+    color: #ecececec;
   }
 }
   /*-----------------------------------*\

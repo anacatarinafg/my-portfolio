@@ -7,49 +7,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="https://kit.fontawesome.com/1b2346db77.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="global.css">
-  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/about.css">
   <title>Ana Gonçalves | About</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar">
-        <div class="navbar__logotype">
-            <a href="/index.html" class="navbar__homepage">
-                Ana
-            </a>
-        </div>
-
-        <!-- ADICIONAR TOGGLE BUTTON TO MOBILE -->
-        <a href="#" class="toggle__button">
-          <i class="fa-solid fa-burger"></i>
-      </a>
-        <!-- ADICIONAR TOGGLE BUTTON TO MOBILE -->
-
-        <div class="navbar__links">
-            <ul class="navbar__list">
-                <li class="navbar__item">
-                    <a href="/work.html" class="navbar__link">
-                        Work
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/about.html" class="navbar__link navbar__link--show">
-                        About
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/contact.html" class="navbar__link">
-                        Contact
-                    </a>
-                </li>
-                <div class="navbar__wrapper">
-                    <li class="navbar__item"><i class="fa-solid fa-circle"></i></span>
-                    <li class="navbar__item"><i class="fa-solid fa-grip-lines"></i></li>
-                </div>
-            </ul>
-        </div>
+    <a class="navbar__logotype" href="/index.html">Ana</a>
+    <button id="navbar__button" class="navbar__button">
+        <i class="fa-solid fa-burger"></i>
+    </button>
+    <nav class="navbar" id="navbar">
+        <button class="navbar__closeButton" id="navbar__closeButton">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="navbar__list">
+            <li class="navbar__item">
+                <a href="/about.html" class="navbar__link navbar__link--show">About</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/work.html" class="navbar__link">Work</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/contact.html" class="navbar__link">Contact</a>
+            </li>
+            <div class="navbar__wrapper">
+              <li class="navbar__item"><i class="fa-solid fa-circle"></i></span>
+              <li class="navbar__item"><i class="fa-solid fa-grip-lines"></i></li>
+          </div>
+        </ul>
     </nav>
 </header>
 
