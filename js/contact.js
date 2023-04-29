@@ -1,4 +1,4 @@
-function sendMail() {
+export function sendMail(SECRET) {
   let nameInput = document.getElementById("name");
   let emailInput = document.getElementById("email");
   let messageInput = document.getElementById("message");
@@ -19,6 +19,8 @@ function sendMail() {
   };
   const serviceID = "service_swqxnsq";
   const templateID = "template_19j455q";
+
+  emailjs.init(SECRET);
 
   emailjs
     .send(serviceID, templateID, params)
