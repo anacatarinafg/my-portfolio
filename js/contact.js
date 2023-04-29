@@ -1,24 +1,31 @@
 function sendMail() {
-  var params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
+  let nameInput = document.getElementById("name");
+  let emailInput = document.getElementById("email");
+  let messageInput = document.getElementById("message");
+
+  let name = nameInput.value.trim();
+  let email = emailInput.value.trim();
+  let message = messageInput.value.trim();
+
+  if (!name || !email || !message) {
+    alert("Please fill out all the fields before sending the email.");
+    return;
+  }
+
+  let params = {
+    name: name,
+    email: email,
+    message: message,
   };
   const serviceID = "service_swqxnsq";
   const templateID = "template_19j455q";
 
-  console.log(serviceID);
-  console.log(templateID);
-  console.log("ola");
-  console.log(params);
   emailjs
     .send(serviceID, templateID, params)
     .then((res) => {
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("message").value = "";
-
-      console.log(res);
+      nameInput.value = "";
+      emailInput.value = "";
+      messageInput.value = "";
       alert("Email sent successfully!");
     })
     .catch((err) => console.log(err));

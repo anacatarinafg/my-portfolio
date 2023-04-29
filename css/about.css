@@ -489,3 +489,48 @@
     width: 3em;
   }
 }
+
+
+
+@media screen and (max-width: 1424px) and (min-width: 768px) {
+  .about__information {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 5em;
+    grid-template-columns: 1fr;
+    padding: 1.5em;
+  }
+  .programming__skills {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1.5em;
+  }
+  .about__circle--1 {
+    display: block;
+    position: absolute;
+    left: 45%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+  }
+  .about__circle--2 {
+    position: absolute;
+    right: 45%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+  }
+  .about__circle--3 {
+    display: none;
+  }
+  .about__circle--4 {
+    display: none;
+  }
+}

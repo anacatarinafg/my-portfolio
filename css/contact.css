@@ -62,7 +62,7 @@
 
 .form__box {
   font-family: var(--basic-ff);
-  padding: 3em 6em;
+  padding: 3em 0em;
   box-sizing: border-box;
   transition: 250ms;
 }
@@ -415,5 +415,70 @@
 
   .form__button:hover svg {
     transform: rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 1424px) and (min-width: 768px) {
+  .main__contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  
+  .left__side {
+    width: 100%;
+    height: 250px;
+    background: #AB1E1E;
+    color: #fff;
+  }
+  .banner {
+    width: 100%;
+  }
+  .banner__text {
+    width: 100%;
+    font-family: "Baskervville";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+  }
+  .banner__text--2 {
+    align-self: flex-start;
+    margin-left: 0;
+  }
+  .right__side {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 3.5em;
+  } 
+}
+
+@media screen and (max-width: 1424px) and (min-width: 768px) {
+  footer {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-top: 1px solid rgba(250, 250, 250, 0.1);
+    color: #fff;
+    margin: 10.5em 0;
+  }
+  
+  
+  .footer__media {
+    display: flex;
+  }
+  
+  .footer__link {
+    padding: .5rem;
+    transition: 50ms;
   }
 }
