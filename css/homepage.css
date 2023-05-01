@@ -1,0 +1,175 @@
+/*-----------------------------------*\
+  #MAIN
+\*-----------------------------------*/
+
+.index__main {
+    padding: 0 1.5em 0 1.5em;
+    position: absolute;
+    width: 100%;
+    z-index: 1 !important;
+    color: #fafafa;
+  }
+  
+  .main__titles {
+    font-family: var(--title-ff);
+    font-weight: var(--title-fw);
+    font-size: 52px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5em 0 0 0;
+  }
+  
+  .main__information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 3em;
+  }
+  
+  .main__paragraphs {
+    width: 100%;
+    text-align: justify;
+    font-family: "Archivo", sans-serif;
+    font-size: 18px;
+  }
+  
+  .main__linkContact {
+    padding: 3.5em 0;
+    font-size: 22px;
+    gap: 0;
+  }
+   
+  .main__icon {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .index__main {
+      padding: 3.5em 3.5em 0 3.5em;
+    }
+    .main__titles {
+      font-family: var(--title-ff);
+      font-weight: var(--title-fw);
+      font-size: 92px;
+      text-transform: uppercase;
+      color: #fff;
+      -webkit-text-stroke: 2px rgb(255, 255, 255);
+      color: transparent;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      transition: 500ms;
+    }
+    .main__headline--1 {
+      align-self: flex-start;
+    }
+  
+    .main__headline--2 {
+      align-self: flex-end;
+    }
+  
+    .main__information {
+      font-family: var(--text-ff);
+      font-weight: var(--text-fw);
+      font-size: 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+      gap: 5px;
+      margin: 3em 0;
+    }
+  
+    .main__paragraphs {
+      width: auto;
+    }
+  
+    .main__paragraph--1 {
+      text-align: end;
+      padding: .5em 0;
+    }
+  
+    .main__paragraph--2 {
+      text-align: justify;
+    }
+  
+    .main__underline p {
+      letter-spacing: -.5mm;
+    }
+  
+    .main__linkContact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: .5em 0;
+      color: rgba(130, 130, 130, 0.8);
+    }
+  
+  
+    .main__icon {
+      font-size: 26px;
+      display: block;
+      text-align: end;
+    }
+  
+    .main__icon:hover {
+      animation-name: bounceAlpha;
+      animation-duration: 1.4s;
+      animation-delay: 0.2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+  
+  
+  @keyframes bounceAlpha {
+    0% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+  
+    25% {
+      opacity: 0;
+      transform: translateX(10px) scale(0.9);
+    }
+  
+    26% {
+      opacity: 0;
+      transform: translateX(-10px) scale(0.9);
+    }
+  
+    55% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+  }
+  
+  
+  @media only screen and (min-width: 912px) and (max-width: 1260px) {
+    .main__titles {
+      font-family: var(--title-ff);
+      font-weight: var(--title-fw);
+      font-size: 132px;
+      text-transform: uppercase;
+      color: #fff;
+      -webkit-text-stroke: 2px rgb(255, 255, 255);
+      color: transparent;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      transition: 500ms;
+    }
+  }
+  
+  @media only screen and (min-width: 1260px) {
+    .main__titles {
+      font-size: 192px;
+    }
+  }
