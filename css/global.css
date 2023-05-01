@@ -147,6 +147,7 @@ header {
   font-size: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+
 }
 
 .navbar__list {
@@ -283,7 +284,7 @@ header {
   font-size: 18px;
 }
 
-.main__contact {
+.main__linkContact {
   padding: 3.5em 0;
 }
 
@@ -354,7 +355,7 @@ header {
     letter-spacing: -.5mm;
   }
 
-  .main__contact {
+  .main__linkContact {
     display: flex;
     align-items: center;
     justify-content: center;
