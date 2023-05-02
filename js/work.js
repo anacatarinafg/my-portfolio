@@ -33,8 +33,8 @@ const PROJECTS = [
     description:
       "To create the front page of Tesla website clone, I used HTML to create the page structure, defining sections, headers, footers, and other elements that make up the site. Additionally, used Tailwind to apply visual styles to the site, such as colors, fonts, spacing, and other design elements.",
     img: "./assets/tesla-project.png",
-    sourceCode: "https://github.com/anacatarinafg/tesla-frontpage-clone",
-    webpage: "",
+    sourceCode: "https://github.com/anacatarinafg/tesla-frontpage-clone/tree/gh-pages",
+    webpage: "https://anacatarinafg.github.io/tesla-frontpage-clone/#solarPanels",
     list: [
       "Tesla webpage: https://www.tesla.com/",
       "Project coded with HTML & TAILWIND",
